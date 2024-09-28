@@ -1,0 +1,148 @@
+
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semitransparente */
+  z-index: 999; /* Um valor menor que o modal */
+}
+
+.modal, .modal2 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 415px;
+  height: 370px;
+  border-radius: 12px;
+  border: 2px;
+  box-shadow: 4px 5px 15px 0px #00000014;
+  background-color: white;
+  padding: 20px;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContent {
+  width: 370px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.container1 {
+  width: 375px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container2 {
+  width: 375px;
+  height: 56px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 40px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 8px;
+}
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #404040;
+}
+
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: #39805F;
+}
+
+.div_button1 {
+  height: 56px;
+  display: flex;
+  align-items: top;
+}
+
+.div_button2 {
+  width: 370px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.button_close_modal {
+  text-decoration: none;
+  width: 24.12px;
+  height: 24.12px;
+  border-radius: 4.69px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ECECEC;
+  border: 1px solid #ECECEC;
+  color: #909090;
+}
+
+.button_cancelar_consulta {
+  width: 170px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #C7122F;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #C7122F;
+  background-color: white;
+}
+
+.button_cancelar_consulta:hover {
+  background-color: #f3f3f37b;
+}
+
+.button_reagendar_consulta {
+  width: 170px;
+  height: 44px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #909090;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 22.5px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #909090;
+  background-color: white;
+}
+
+.button_reagendar_consulta:hover {
+  background-color: #f3f3f37b;
+}

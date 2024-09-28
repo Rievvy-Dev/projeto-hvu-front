@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.texto_box {
+    width: 519px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.titulo {
+    width: 515px;
+    height: 96px;
+    color: #327053;
+    font-family: 'Poppins', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    margin-left: auto;
+}
+
+.paragrafo {
+    width: 519px;
+    height: 72px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #404040;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+@media only screen and (max-width: 700px) {
+    
+    .texto_box {
+        width: 90%; /* Ajusta a largura para 90% da tela */
+        height: auto; /* Ajusta a altura automaticamente */
+        padding: 0 10px; /* Adiciona padding para espaçamento */
+    }
+
+    .titulo {
+        width: 100%; /* Ajusta a largura para 100% da div pai */
+        font-size: 24px; /* Ajusta o tamanho da fonte */
+        line-height: 36px; /* Ajusta a altura da linha */
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-right: 0;
+    }
+
+    .paragrafo {
+        width: 100%; /* Ajusta a largura para 100% da div pai*/
+        font-size: 15px; /* Ajusta o tamanho da fonte */
+        line-height: 22px; /* Ajusta a altura da linha */
+        margin-left: 0; /* Remove a margem esquerda */
+        margin-right: 0;
+    }
+}

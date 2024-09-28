@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+.pagina {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 1200px;
+    min-height: 900px;
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 56px;
+}
+
+.calendar_container {
+    width: 1200px;
+    height: 42.58px;
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.calendar_box {
+    display: flex;
+    gap: 21.1px;
+    align-items: center;
+}
+
+.menu {
+    width: 1200px;
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button_options {
+    display: flex;
+    gap: 24px;
+}
+
+.button_options button {
+    width: 197.12px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid #39805F;
+    background-color: white;
+    color: #39805F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
+.button:hover {
+    background-color:#f3f3f37b;
+}
+
+.tabela {
+    width: 1200px;
+    height: 588px;
+    margin-top: 50px;
+    border: 2px solid #ECECEC;
+    border-radius: 12px;
+}
+
+.coluna_l1 {
+    width: 157px;
+    height: 96px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.coluna_l1 h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #2D2D2D;
+}
+
+.coluna_l1 div {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #606060;
+}
+
+.coluna1 {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: 0em;
+    color: #606060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coluna1_l1 {
+    width: 80px;
+    height: 123px;
+}
+
+.linha1 {
+    width: 160px;
+    height: 96px;
+    border-bottom: 2px solid #ECECEC;
+}
+
+.th {
+    border-left: 2px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    height: 6vh;
+}
+
+.agendado{
+    background-color: #CBC7FF;
+    border: 2px solid #CBC7FF;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    font-weight: 700;
+    color: #474747;
+}
+
+.finalizado{
+    background-color: #4A876B;
+    border: 2px solid #4A876B;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    font-weight: 700;
+    color: #474747;
+}
+
+.precriada{
+    background-color: #ECECEC;
+    border: 2px solid #ECECEC;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    font-weight: 700;
+    color: #474747;
+}
+
+.disponivel{
+    background-color: #EEF8F3;
+    border: 2px solid #EEF8F3;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    font-weight: 700;
+    color: #474747;
+}
+
+.disponível{
+    background-color: #EEF8F3;
+    border: 2px solid #EEF8F3;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    font-weight: 700;
+    color: #474747;
+}
+
+.cancelado{
+    background-color: #FFC1C1;
+    border: 2px solid #FFC1C1;
+    padding: 0 0.5rem 0 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    font-weight: 700;
+    color: #474747;
+}
+
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(131, 126, 126, 0.2); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 415px;
+    height: 270px;
+    border-radius: 12px;
+    border: 2px;
+    box-shadow: 4px 5px 15px 0px #00000014;
+    background-color: white;
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    width: 370px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.container1 {
+    width: 375px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container2 {
+    width: 375px;
+    height: 56px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 8px;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #404040;
+}
+
+.subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: #39805F;
+}
+
+.div_button1 {
+    height: 56px;
+    display: flex;
+    align-items: top;
+}
+
+.div_button2 {
+    width: 370px;
+    display: flex;
+    justify-content: right;
+}
+
+.button_close_modal {
+    text-decoration: none;
+    width: 24.12px;
+    height: 24.12px;
+    border-radius: 4.69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ECECEC;
+    border: 1px solid #ECECEC;
+    color: #909090;
+}
+
+.button_cancelar_consulta {
+    width: 170px;
+    height: 44px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #C7122F;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #C7122F;
+    background-color: white;
+}
+
+.button_cancelar_consulta:hover {
+    background-color: #f3f3f37b;
+}
+
+.separator {
+    height: 1rem;
+    background-color: #ECECEC; /* Ou a cor que preferir */
+  }
+  
+  .separatorCell {
+    background-color: #ECECEC; /* Ou a cor que preferir */
+  }
+  
